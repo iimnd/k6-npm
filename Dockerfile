@@ -1,3 +1,3 @@
 FROM loadimpact/k6:latest
 
-COPY ./libs/ /libs
+COPY ./libs /home/k6/libs

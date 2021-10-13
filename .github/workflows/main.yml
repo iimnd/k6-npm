@@ -41,7 +41,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: iimnd/k6-npm:1.0.0
+          tags: iimnd/k6-npm:1.0.1
           
       -
         name: Image digest

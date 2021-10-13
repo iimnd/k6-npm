@@ -8,7 +8,7 @@ FROM alpine:3.14
 RUN apk add --update --no-cache ca-certificates nodejs npm && \
     adduser -D -u 12345 -g 12345 k6
 COPY --from=builder /go/bin/k6 /usr/bin/k6
-
+COPY libs /home/k6
 USER 12345
 WORKDIR /home/k6
 ENTRYPOINT ["k6"]
